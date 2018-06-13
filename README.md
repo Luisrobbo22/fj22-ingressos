@@ -1,1 +1,2 @@
-Descrição sobre mim
+﻿Projeto de ingressos de cinema.
+Desenvolvido por Luis
