@@ -19,10 +19,10 @@
 
 	
 	<developers>
-		<delevopers>
+		<developer>
 		<name> John Doe </name>
 		<email> jdoe@exemple.com </email>
-		</developers>
+		</developer>
 	</developers>
 
     <dependencies>
