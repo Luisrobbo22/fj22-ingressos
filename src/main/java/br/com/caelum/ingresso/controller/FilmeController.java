@@ -38,7 +38,7 @@ public class FilmeController {
     }
 
 
-    @PostMapping("/admin/filme")
+    @PostMapping("/admin/filmes")
     @Transactional
     public ModelAndView salva(@Valid Filme filme, BindingResult result){
 
