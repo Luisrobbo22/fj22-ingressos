@@ -2,6 +2,7 @@ package br.com.caelum.ingresso.model.validacao;
 
 import static org.junit.Assert.*;
 
+import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Arrays;
@@ -18,17 +19,18 @@ public class GerenciadorDeSessaoTest {
 	
 	
 	private Filme aLagoaAzul;
+	private Filme rongueOne;
 	private Sala salaZeroUm;
+	private Sala salaZeroDois;
 	private Sessao sessaoExistente;
+	private BigDecimal preco;
 
 	@Before
 	public void setup() {
-		
-		aLagoaAzul = new Filme("A Lagoa Azul", Duration.ofMinutes(120), "Amor");
-		salaZeroUm = new Sala("Sala 01");
-		sessaoExistente = new Sessao(LocalTime.parse("14:00:00"), aLagoaAzul, salaZeroUm);
-		
-		
+		preco = new BigDecimal("25.00");
+		aLagoaAzul = new Filme("A Lagoa Azul", Duration.ofMinutes(120), "Amor", BigDecimal.ONE);
+		salaZeroUm = new Sala("Sala 01", preco);
+		sessaoExistente = new Sessao(LocalTime.parse("14:00:00"), aLagoaAzul, salaZeroUm);				
 	}
 	
 	@Test

@@ -27,11 +27,11 @@ public class GerenciadorDeSessao {
 	private boolean conflita(Sessao sessaoExistente, Sessao sessaoNova) {
 
 		if (sessaoNova.getHorario().isBefore(sessaoExistente.getHorario())
-				&& sessaoNova.getHorarioTermino().isBefore(sessaoExistente.getHorario())) {
+				&& sessaoNova.getHorarioDeTermino().isBefore(sessaoExistente.getHorario())) {
 			return false;
 		}
 		if (sessaoExistente.getHorario().isBefore(sessaoNova.getHorario())
-				&& sessaoExistente.getHorarioTermino().isBefore(sessaoNova.getHorario())) {
+				&& sessaoExistente.getHorarioDeTermino().isBefore(sessaoNova.getHorario())) {
 			return false;
 			
 		}
